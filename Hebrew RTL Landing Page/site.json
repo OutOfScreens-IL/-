@@ -1,0 +1,11 @@
+{
+  "title": "מחוץ למסכים",
+  "description": "Promotes outdoor group activities for schools and youth, fostering teamwork and communication while encouraging students to engage beyond screens.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
