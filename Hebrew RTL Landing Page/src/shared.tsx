@@ -103,7 +103,7 @@ export const IMG = {
   card1:    "https://images.unsplash.com/photo-1776243773206-a29b683c97fb?w=640&h=420&fit=crop&auto=format&q=80",
   card2:    "https://images.unsplash.com/photo-1780991415059-ade3b20aecec?w=640&h=420&fit=crop&auto=format&q=80",
   card3:    "https://images.unsplash.com/photo-1758272959663-b30513083206?w=640&h=420&fit=crop&auto=format&q=80",
-  founders: "https://images.unsplash.com/photo-1770564512458-90ffbb0fd722?w=800&h=700&fit=crop&auto=format&q=82",
+  founders: founders: "/assets/us.png.jpeg",
 shaked: "/assets/shaked.png.jpeg",
   noy: "/assets/Noy.png.jpeg",
   story:    "https://images.unsplash.com/photo-1680988632972-a0b59f378ec8?w=800&h=600&fit=crop&auto=format&q=82",
