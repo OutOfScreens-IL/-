@@ -105,7 +105,7 @@ export const IMG = {
   card3:    "https://images.unsplash.com/photo-1758272959663-b30513083206?w=640&h=420&fit=crop&auto=format&q=80",
   founders: "https://images.unsplash.com/photo-1770564512458-90ffbb0fd722?w=800&h=700&fit=crop&auto=format&q=82",
 shaked: "/assets/shaked.png.jpeg",
-  noy:      "https://images.unsplash.com/photo-1786641982481-9acdde44bbb2?w=520&h=640&fit=crop&auto=format&q=82",
+  noy: "/assets/Noy.png.jpeg",
   story:    "https://images.unsplash.com/photo-1680988632972-a0b59f378ec8?w=800&h=600&fit=crop&auto=format&q=82",
   gallery1: "https://images.unsplash.com/photo-1776243321350-9a1678266e06?w=900&h=680&fit=crop&auto=format&q=82",
   gallery2: "https://images.unsplash.com/photo-1533222535026-754c501569dd?w=480&h=380&fit=crop&auto=format&q=80",
