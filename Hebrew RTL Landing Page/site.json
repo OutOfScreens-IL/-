@@ -1,8 +1,8 @@
 {
-  "title": "מחוץ למסכים",
-  "description": "Promotes outdoor group activities for schools and youth, fostering teamwork and communication while encouraging students to engage beyond screens.",
+  "title": "מחוץ למסכים | פעילויות ODT וגיבוש לתלמידים",
+  "description": "מחוץ למסכים מציעה פעילויות ODT, גיבוש וחוויה לתלמידים ובתי ספר. פעילויות משמעותיות המחזקות עבודת צוות, תקשורת וחיבור בין תלמידים.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
