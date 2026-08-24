@@ -37,7 +37,7 @@ export default function Home() {
             display: "inline-flex", alignItems: "center", alignSelf: "flex-start",
             backgroundColor: "rgba(0,0,0,0.1)", borderRadius: 24, padding: "5px 14px",
             fontSize: 13, fontWeight: 600, color: "rgba(0,0,0,0.65)", letterSpacing: "0.01em", marginBottom: 28,
-          }}>פעילויות ODT לבתי ספר</div>
+          }}>מחוץ למסכים · פעילויות ODT לבתי ספר</div>
 
           <h1 className="hero-h1" style={{
             fontSize: isMobile ? 40 : isTablet ? 52 : 64,
