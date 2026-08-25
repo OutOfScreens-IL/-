@@ -408,7 +408,7 @@ export default function About() {
               },
               {
                 title: "אתגר שיווי המשקל",
-                desc: "על חברי הקבוצה לשמור על שיווי משקל יחד בשיתוף פעולה.",
+                desc: "הקבוצה נדרשת לשמור על שיווי משקל יחד בשיתוף פעולה תוך פתרון חידות על מדינת ישראל ותולדותיה.",
                 img: "https://images.unsplash.com/photo-1770563182638-6294f5851a41?w=600&h=420&fit=crop&auto=format&q=80",
                 accent: GREEN,
               },
@@ -420,7 +420,7 @@ export default function About() {
               },
               {
                 title: "שמש אנושית",
-                desc: "הקבוצה משתמשת בחשיבה יצירתית באמצעות השמש על מנת לבנות מגדל שיגיע לשמיים.",
+                desc: "הקבוצה מתרגלת עבודת צוות באמצעות השמש על מנת לבנות מגדל שיגיע לשמיים.",
                 img: "https://images.unsplash.com/photo-1758599668796-cdd37f4ecb66?w=600&h=420&fit=crop&auto=format&q=80",
                 accent: BLUE,
               },
