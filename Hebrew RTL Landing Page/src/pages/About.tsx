@@ -397,7 +397,7 @@ export default function About() {
               {
                 title: "חץ וקשת",
                 desc: "פעילות המפתחת ריכוז, דיוק ושליטה עצמית.",
-                img: "https://images.unsplash.com/photo-1776243321350-9a1678266e06?w=600&h=420&fit=crop&auto=format&q=80",
+                img: "/assets/errow.jpeg",
                 accent: CORAL,
               },
               {
