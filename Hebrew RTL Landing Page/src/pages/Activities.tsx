@@ -47,7 +47,7 @@ export default function Activities() {
               margin: "0 0 10px", letterSpacing: "-0.022em", lineHeight: 1.1,
             }}>כל קבוצה והאתגר שלה</h2>
             <p style={{ fontSize: 18, color: MUTED, margin: 0, lineHeight: 1.6 }}>
-              ועוד מגוון רחב של פעילויות
+              ימי הפעילויות שאנחנו מציעות
             </p>
           </div>
 
@@ -55,9 +55,9 @@ export default function Activities() {
             display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24,
           }}>
             {[
-              { title: "יום שיא",        desc: "יום פעילויות עוצמתי עם תחנות, אתגרים ועבודת צוות.",               img: IMG.card3, accent: CORAL },
-              { title: "המרוץ למיליון", desc: "מרוץ משימות מרגש ותחרותי שמחבר את הקבוצה יחד.",                   img: IMG.card2, accent: BLUE  },
-              { title: "פעילות ODT",    desc: "פעילות חוצות מותאמת אישית לצרכי הקבוצה ולמטרותיה.",             img: IMG.card1, accent: GREEN },
+              { title: "יום שיא ספורטיבי",        desc: "יום פעילויות ספורטיבי עוצמתי עם תחנות, אתגרים ועבודת צוות.",               img: IMG.card3, accent: CORAL },
+              { title: "המרוץ למיליון", desc: "מרוץ משימות שכבתי מרגש ותחרותי שבסופו תוכרז הכיתה המנצחת.",                   img: IMG.card2, accent: BLUE  },
+              { title: "פעילות ODT",    desc: "פעילויות שמוציאות את בתלמידים מחוץ למסכים ומפתחות יכולות הנהגה, שיתוף פעולה והעצמה אישית.",             img: IMG.card1, accent: GREEN },
             ].map(card => (
               <div key={card.title} className="activity-card" style={{
                 backgroundColor: WHITE, borderRadius: 20, overflow: "hidden",
