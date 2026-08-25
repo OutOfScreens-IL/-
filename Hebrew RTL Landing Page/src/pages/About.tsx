@@ -426,9 +426,9 @@ export default function About() {
               },
               {
                 title: "איזון למטרה",
-                desc: "אתגר קבוצתי שבו המשתתפים אוחזים יחד ביריעת הפעילות ונדרשים לאזן אותה באופן מושלם על מנת להוביל כל כדור ל"חוף מבטחים" מבלי שיפול בפתחים.",
-                img: "/assets/brazent.jpeg",
-                accent: CORAL,
+desc: 'אתגר קבוצתי שבו המשתתפים אוחזים יחד ביריעת הפעילות ונדרשים לאזן אותה באופן מושלם על מנת להוביל כל כדור ל"חוף מבטחים" מבלי שיפול בפתחים.',
+img: "/assets/brazent.jpeg",
+accent: CORAL,
               },
             ].map(station => (
               <div key={station.title} style={{
