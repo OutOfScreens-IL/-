@@ -207,7 +207,7 @@ export default function Home() {
 
           <div className="levels-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
             {[
-              { level: "יסודי",    ages: "כיתות א׳–ו׳",  desc: "פעילויות ממוקדות בשיתוף פעולה, תקשורת וחיבור חברתי, מותאמות לגיל הרך.", accent: CORAL, bg: "#FEF0EE" },
+             { level: "יסודי", ages: "כיתות א׳–ו׳", desc: "פעילויות ממוקדות בשיתוף פעולה, תקשורת וחיבור חברתי, מותאמות לגיל ולדינמיקה הכיתתית.", accent: CORAL, bg: "#FEF0EE" },
               { level: "על יסודי", ages: "כיתות ז׳–ט׳",  desc: "אתגרים שמפתחים מנהיגות, עצמאות וחשיבה תחת לחץ.",                        accent: GREEN, bg: "#EEF5EF" },
               { level: "תיכון",    ages: "כיתות י׳–י״ב", desc: "חוויות עמוקות שמחזקות קשרי חברות ומכינות לחיים מחוץ לכיתה.",            accent: BLUE,  bg: "#EDF0F6" },
             ].map(card => (
