@@ -55,7 +55,7 @@ export default function Activities() {
             display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24,
           }}>
             {[
-              { title: "יום שיא ספורטיבי",        desc: "יום פעילויות ספורטיבי עוצמתי עם תחנות, אתגרים ועבודת צוות.",               img: "/assets/WhatsYOMSI.jpeg", accent: CORAL },
+              { title: "יום שיא ספורטיבי",        desc: "יום פעילויות ספורטיבי עוצמתי עם תחנות, אתגרים ועבודת צוות.",              img: "/assets/mulekulot.jpeg", accent: CORAL },
               { title: "המרוץ למיליון", desc: "מרוץ משימות שכבתי מרגש ותחרותי שבסופו תוכרז הכיתה המנצחת.",                    img: "/assets/amazing.race.jpeg", accent: BLUE },
               { title: "פעילות ODT",    desc: "פעילויות שמוציאות את בתלמידים מחוץ למסכים ומפתחות יכולות הנהגה, שיתוף פעולה והעצמה אישית.",            img: "/assets/ODT.jpeg", accent: GREEN },
             ].map(card => (
