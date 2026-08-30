@@ -380,7 +380,7 @@ export default function Home() {
                     borderBottom: `1px solid ${BORDER}`, position: "relative",
                   }}>
                     <img
-                      src="/assets/galatz-logo.png"
+                      src="/assets/galatz-logo.jpg"
                       alt="גלי צה״ל"
                       style={{ maxWidth: "70%", maxHeight: 105, width: "auto", height: "auto", objectFit: "contain" }}
                     />
@@ -408,7 +408,7 @@ export default function Home() {
                   alignItems: "center", textAlign: "center",
                 }}>
                   <img
-                    src="/assets/galatz-logo.png"
+                    src="/assets/galatz-logo.jpg"
                     alt="גלי צה״ל"
                     style={{ maxWidth: 170, maxHeight: 90, marginBottom: 24, objectFit: "contain" }}
                   />
