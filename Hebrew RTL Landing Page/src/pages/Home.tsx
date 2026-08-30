@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import {
   CORAL, YELLOW, GREEN, BLUE, BLACK, WHITE, PAGE_BG, MUTED, BORDER,
@@ -9,6 +10,8 @@ export default function Home() {
   const isMobile = vw < 768;
   const isTablet = vw < 1024;
   const W = { maxWidth: 1200, margin: "0 auto", padding: isMobile ? "0 20px" : "0 48px" } as const;
+
+  const [activeMedia, setActiveMedia] = useState<"reshet13" | "galatz" | null>(null);
 
   return (
     <>
@@ -228,6 +231,209 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ══ הכתבות עלינו ══ */}
+      <section style={{ backgroundColor: PAGE_BG, padding: isMobile ? "72px 0" : "96px 0" }}>
+        <div style={W}>
+          <div style={{ textAlign: "center", marginBottom: isMobile ? 40 : 52 }}>
+            <h2 className="section-h2" style={{
+              fontSize: isMobile ? 30 : 44, fontWeight: 800, color: BLACK,
+              margin: "0 0 10px", letterSpacing: "-0.024em", lineHeight: 1.1,
+            }}>
+              הכתבות עלינו
+            </h2>
+            <p style={{ fontSize: 17, color: MUTED, margin: 0 }}>מחוץ למסכים בתקשורת</p>
+          </div>
+
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)",
+            gap: 22,
+            alignItems: "stretch",
+          }}>
+            {/* כל העיר */}
+            <a
+              href="https://www.kolhair.co.il/education/267173/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                backgroundColor: WHITE, borderRadius: 22, border: `1.5px solid ${BORDER}`,
+                overflow: "hidden", textDecoration: "none", color: BLACK,
+                display: "flex", flexDirection: "column", minHeight: 430,
+                boxShadow: "0 4px 18px rgba(0,0,0,0.04)",
+              }}
+            >
+              <div style={{
+                height: 190, backgroundColor: WHITE, display: "flex",
+                alignItems: "center", justifyContent: "center", padding: 32,
+                borderBottom: `1px solid ${BORDER}`,
+              }}>
+                <img
+                  src="/assets/kolhair-logo.png"
+                  alt="כל העיר ירושלים"
+                  style={{ maxWidth: "78%", maxHeight: 105, width: "auto", height: "auto", objectFit: "contain" }}
+                />
+              </div>
+              <div style={{ padding: "26px 24px 28px", display: "flex", flexDirection: "column", flex: 1 }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: CORAL, marginBottom: 10 }}>כל העיר ירושלים</div>
+                <h3 style={{ fontSize: 21, fontWeight: 800, color: BLACK, lineHeight: 1.35, margin: "0 0 12px" }}>
+                  המילואימניקיות הירושלמיות שמנתקות את התלמידים מהמסכים
+                </h3>
+                <p style={{ fontSize: 15, color: MUTED, lineHeight: 1.7, margin: "0 0 24px" }}>
+                  כתבה על מחוץ למסכים, הפעילויות שלנו והחיבור בין תלמידים דרך חוויה, עבודת צוות ופעילות מחוץ למסך.
+                </p>
+                <div style={{ marginTop: "auto", fontSize: 15, fontWeight: 800, color: BLACK }}>לקריאת הכתבה ←</div>
+              </div>
+            </a>
+
+            {/* רשת 13 */}
+            <div style={{
+              backgroundColor: WHITE, borderRadius: 22, border: `1.5px solid ${BORDER}`,
+              overflow: "hidden", minHeight: 430, boxShadow: "0 4px 18px rgba(0,0,0,0.04)",
+            }}>
+              {activeMedia !== "reshet13" ? (
+                <button
+                  type="button"
+                  onClick={() => setActiveMedia("reshet13")}
+                  style={{
+                    border: "none", padding: 0, margin: 0, width: "100%", height: "100%",
+                    background: "transparent", cursor: "pointer", textAlign: "right",
+                    fontFamily: "'Assistant', sans-serif", color: BLACK,
+                    display: "flex", flexDirection: "column",
+                  }}
+                >
+                  <div style={{
+                    height: 190, backgroundColor: WHITE, display: "flex",
+                    alignItems: "center", justifyContent: "center", padding: 32,
+                    borderBottom: `1px solid ${BORDER}`, position: "relative",
+                  }}>
+                    <img
+                      src="/assets/reshet13-logo.png"
+                      alt="רשת 13"
+                      style={{ maxWidth: "70%", maxHeight: 105, width: "auto", height: "auto", objectFit: "contain" }}
+                    />
+                    <div style={{
+                      position: "absolute", left: 18, bottom: 18, width: 46, height: 46,
+                      borderRadius: "50%", backgroundColor: BLACK, color: WHITE,
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                      fontSize: 18, paddingLeft: 3,
+                    }}>▶</div>
+                  </div>
+                  <div style={{ padding: "26px 24px 28px", display: "flex", flexDirection: "column", flex: 1 }}>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: CORAL, marginBottom: 10 }}>רשת 13</div>
+                    <h3 style={{ fontSize: 21, fontWeight: 800, color: BLACK, lineHeight: 1.35, margin: "0 0 12px" }}>
+                      מחוץ למסכים ברשת 13
+                    </h3>
+                    <p style={{ fontSize: 15, color: MUTED, lineHeight: 1.7, margin: "0 0 24px" }}>
+                      צפו בכתבה על היוזמה שלנו ועל הפעילויות שמוציאות תלמידים מהמסכים ומחברות ביניהם.
+                    </p>
+                    <div style={{ marginTop: "auto", fontSize: 15, fontWeight: 800, color: BLACK }}>לצפייה בכתבה ←</div>
+                  </div>
+                </button>
+              ) : (
+                <div style={{ padding: 18, display: "flex", flexDirection: "column", height: "100%" }}>
+                  <video controls autoPlay playsInline style={{
+                    width: "100%", maxHeight: 360, borderRadius: 14, backgroundColor: BLACK,
+                  }}>
+                    <source src="/assets/reshet13.mp4" type="video/mp4" />
+                    הדפדפן שלך אינו תומך בווידאו.
+                  </video>
+                  <button
+                    type="button"
+                    onClick={() => setActiveMedia(null)}
+                    style={{
+                      marginTop: 16, alignSelf: "center", border: `1.5px solid ${BLACK}`,
+                      backgroundColor: WHITE, color: BLACK, borderRadius: 10,
+                      padding: "9px 20px", fontFamily: "'Assistant', sans-serif",
+                      fontSize: 14, fontWeight: 700, cursor: "pointer",
+                    }}
+                  >
+                    חזרה
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* גל״צ */}
+            <div style={{
+              backgroundColor: WHITE, borderRadius: 22, border: `1.5px solid ${BORDER}`,
+              overflow: "hidden", minHeight: 430, boxShadow: "0 4px 18px rgba(0,0,0,0.04)",
+            }}>
+              {activeMedia !== "galatz" ? (
+                <button
+                  type="button"
+                  onClick={() => setActiveMedia("galatz")}
+                  style={{
+                    border: "none", padding: 0, margin: 0, width: "100%", height: "100%",
+                    background: "transparent", cursor: "pointer", textAlign: "right",
+                    fontFamily: "'Assistant', sans-serif", color: BLACK,
+                    display: "flex", flexDirection: "column",
+                  }}
+                >
+                  <div style={{
+                    height: 190, backgroundColor: WHITE, display: "flex",
+                    alignItems: "center", justifyContent: "center", padding: 32,
+                    borderBottom: `1px solid ${BORDER}`, position: "relative",
+                  }}>
+                    <img
+                      src="/assets/galatz-logo.svg"
+                      alt="גלי צה״ל"
+                      style={{ maxWidth: "70%", maxHeight: 105, width: "auto", height: "auto", objectFit: "contain" }}
+                    />
+                    <div style={{
+                      position: "absolute", left: 18, bottom: 18, width: 46, height: 46,
+                      borderRadius: "50%", backgroundColor: BLACK, color: WHITE,
+                      display: "flex", alignItems: "center", justifyContent: "center", fontSize: 21,
+                    }}>♪</div>
+                  </div>
+                  <div style={{ padding: "26px 24px 28px", display: "flex", flexDirection: "column", flex: 1 }}>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: CORAL, marginBottom: 10 }}>גל״צ</div>
+                    <h3 style={{ fontSize: 21, fontWeight: 800, color: BLACK, lineHeight: 1.35, margin: "0 0 12px" }}>
+                      מחוץ למסכים בגלי צה״ל
+                    </h3>
+                    <p style={{ fontSize: 15, color: MUTED, lineHeight: 1.7, margin: "0 0 24px" }}>
+                      האזינו לראיון שלנו בתוכנית שגרת חירום בגלי צה״ל על מחוץ למסכים והפעילות עם תלמידים.
+                    </p>
+                    <div style={{ marginTop: "auto", fontSize: 15, fontWeight: 800, color: BLACK }}>להאזנה לראיון ←</div>
+                  </div>
+                </button>
+              ) : (
+                <div style={{
+                  padding: "32px 22px", minHeight: 430, display: "flex",
+                  flexDirection: "column", justifyContent: "center",
+                  alignItems: "center", textAlign: "center",
+                }}>
+                  <img
+                    src="/assets/galatz-logo.svg"
+                    alt="גלי צה״ל"
+                    style={{ maxWidth: 170, maxHeight: 90, marginBottom: 24, objectFit: "contain" }}
+                  />
+                  <h3 style={{ fontSize: 21, fontWeight: 800, margin: "0 0 22px", color: BLACK }}>
+                    הראיון שלנו בגלי צה״ל
+                  </h3>
+                  <audio controls autoPlay style={{ width: "100%", marginBottom: 20 }}>
+                    <source src="/assets/galatz.mp3" type="audio/mpeg" />
+                    הדפדפן שלך אינו תומך באודיו.
+                  </audio>
+                  <button
+                    type="button"
+                    onClick={() => setActiveMedia(null)}
+                    style={{
+                      border: `1.5px solid ${BLACK}`, backgroundColor: WHITE,
+                      color: BLACK, borderRadius: 10, padding: "9px 20px",
+                      fontFamily: "'Assistant', sans-serif", fontSize: 14,
+                      fontWeight: 700, cursor: "pointer",
+                    }}
+                  >
+                    חזרה
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>
